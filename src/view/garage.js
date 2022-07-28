@@ -1,4 +1,4 @@
-import Header from "./header";
+import Header from "../components/header";
 import Add from "../components/garage/add.car/Add";
 import Update from "../components/garage/edit.car/Update";
 import Buttons from "../components/garage/Buttons";
@@ -7,7 +7,7 @@ import car from "../assets/image/car";
 
 const garage = () => {
     document.addEventListener('click', (e) => {
-        load('http://127.0.0.1:3000/garage', {}).then(data => {
+        load('http://127.0.0.1:3000/garage', {method: 'GET'}).then(data => {
             if (e.target.getAttribute('id') === 'garage') {
                 document.getElementById('root').innerHTML = `${Header}
             <div class="garage-body" id="garage-body">
