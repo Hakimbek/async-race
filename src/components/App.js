@@ -1,6 +1,6 @@
 import garage from "../view/garage";
 import winners from "../view/winners";
-import Header from "./header";
+import Header from "./header/header";
 
 const App = () => {
     document.getElementById('root').innerHTML = Header;

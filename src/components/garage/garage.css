@@ -1,0 +1,96 @@
+.garage-body {
+    color: white;
+}
+
+.add-wrapper,
+.edit-wrapper,
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.add-name,
+.edit-name {
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+}
+
+.add-name:focus,
+.edit-name:focus {
+    outline: none;
+}
+
+.add-color,
+.edit-color,
+.reset-button,
+.remove-button {
+    margin: 0 5px;
+}
+
+.add-button,
+.edit-button,
+.race-button,
+.reset-button,
+.generate-button,
+.select-button,
+.remove-button {
+    font-size: 15px;
+    font-weight: bold;
+    background: lavender;
+    height: 27px;
+    width: 85px;
+    border-radius: 5px;
+    border-bottom: 4px solid cornflowerblue;
+}
+
+.race-button,
+.reset-button {
+    height: 30px;
+    background: palegoldenrod;
+    border-bottom: 4px solid yellowgreen;
+}
+
+.select-button,
+.remove-button {
+    height: 30px;
+}
+
+.generate-button {
+    height: 30px;
+    width: 170px;
+}
+
+.add-button:active,
+.edit-button:active,
+.reset-button:active,
+.race-button:active,
+.generate-button:active,
+.select-button:active,
+.remove-button:active {
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.cars-amount {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.car-wrapper {
+    margin: 20px 0;
+}
+
+.car-wrapper__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.car-name {
+    font-size: 20px;
+    color: darkkhaki;
+    margin-left: 20px;
+}
