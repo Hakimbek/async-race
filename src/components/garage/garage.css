@@ -27,7 +27,8 @@
 .add-color,
 .edit-color,
 .reset-button,
-.remove-button {
+.remove-button,
+.b-button {
     margin: 0 5px;
 }
 
@@ -93,4 +94,38 @@
     font-size: 20px;
     color: darkkhaki;
     margin-left: 20px;
+}
+
+.car-wrapper__body {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed white;
+}
+
+.a-button,
+.b-button {
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid darkseagreen;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.a-button {
+    color: darkseagreen;
+    border: 1px solid darkseagreen;
+}
+
+.b-button {
+    color: saddlebrown;
+    border: 1px solid saddlebrown;
+}
+
+.flag-wrapper {
+    margin: 0 150px 0 auto;
+}
+
+.gray {
+    color: darkslategray;
+    border: 1px solid darkslategray;
 }

@@ -3,8 +3,8 @@ import load from "../controller/loader";
 
 const winners = () => {
     document.addEventListener('click', (e) => {
-        if (e.target.getAttribute('id') === 'winners') {
-            document.getElementById('root').innerHTML = `${Header}
+        if ((e.target as HTMLElement).getAttribute('id') === 'winners') {
+            (document.getElementById('root') as HTMLElement).innerHTML = `${Header}
             <div class="gw">
                 <h3>Winners</h3>
             </div>`

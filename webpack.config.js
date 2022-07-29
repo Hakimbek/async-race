@@ -16,7 +16,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = ({development}) => ({
     mode: development ? 'development' : 'production',
     devtool: development ? 'inline-source-map' : false,
-    entry: './src/index.js',
+    entry: './src/index.ts',
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
@@ -24,11 +24,11 @@ module.exports = ({development}) => ({
     },
     module: {
         rules: [
-            // {
-            //     test: /\.[tj]s$/,
-            //     use: 'ts-loader',
-            //     exclude: /node_modules/,
-            // },
+            {
+                test: /\.[tj]s$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
                 type: 'asset/resource',
