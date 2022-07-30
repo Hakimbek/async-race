@@ -1,7 +1,8 @@
 import garage from "../view/garage/garage";
-import winners from "../view/winners";
+import winners from "../view/winners/winners";
 import header from "./header/header";
 import './garage/garage.css';
+import './winners/winners.css'
 
 const App = () => {
     localStorage.setItem('carWin', 'false');
