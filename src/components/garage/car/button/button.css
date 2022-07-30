@@ -5,6 +5,7 @@
 
 .a-button,
 .b-button {
+    cursor: pointer;
     font-size: 20px;
     background: transparent;
     border: 2px solid darkseagreen;

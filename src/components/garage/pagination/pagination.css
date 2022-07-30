@@ -1,0 +1,26 @@
+.current-page {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.prev,
+.next {
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px 5px;
+    background: lavender;
+    border-bottom: 4px solid cornflowerblue;
+}
+
+.prev:active,
+.next:active {
+    border-bottom: 2px solid cornflowerblue;
+}

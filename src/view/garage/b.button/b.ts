@@ -6,6 +6,7 @@ export default function bButton(element: HTMLElement) {
     const a = b.previousSibling as HTMLElement;
     b.setAttribute('class', 'b-button gray')
     a.setAttribute('class', 'a-button')
+    a.removeAttribute('disabled')
 
     const cars = document.getElementsByClassName('car-image')
     for (let i = 0; i < cars.length; i++) {

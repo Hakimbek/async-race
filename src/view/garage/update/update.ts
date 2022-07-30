@@ -1,4 +1,5 @@
 import load from "../../../controller/loader";
+import getAllCars from "../get/getAllCars";
 
 export default function updateCar(element: HTMLElement) {
     if (!(document.getElementById('editName') as HTMLInputElement).disabled) {
@@ -13,8 +14,6 @@ export default function updateCar(element: HTMLElement) {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
-        })
-
-        window.location.reload();
+        }).then(() => getAllCars(element))
     }
 }

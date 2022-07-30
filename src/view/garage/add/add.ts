@@ -1,4 +1,5 @@
 import load from "../../../controller/loader";
+import getAllCars from "../get/getAllCars";
 
 export default function addCar(element: HTMLElement) {
     const data = {
@@ -13,8 +14,6 @@ export default function addCar(element: HTMLElement) {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
-        }).then(res => console.log(res)).catch(err => console.log(err))
-
-        window.location.reload();
+        }).then(() => getAllCars(element))
     }
 }
