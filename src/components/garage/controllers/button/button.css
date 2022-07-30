@@ -1,0 +1,9 @@
+@import "./race.css";
+@import "./reset.css";
+@import "./generate.css";
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}

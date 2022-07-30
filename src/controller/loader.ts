@@ -1,4 +1,4 @@
-import Param from "./param";
+import Param from "../dto/param";
 
 const load = async (url: string, param: Param) => {
     let response = await fetch(url, {
