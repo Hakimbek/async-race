@@ -1,0 +1,35 @@
+.add-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.add-name {
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+}
+
+.add-name:focus {
+    outline: none;
+}
+
+.add-color {
+    margin: 0 5px;
+}
+
+.add-button {
+    font-size: 15px;
+    font-weight: bold;
+    background: lavender;
+    height: 27px;
+    width: 85px;
+    border-radius: 5px;
+    border-bottom: 4px solid cornflowerblue;
+}
+
+.add-button:active {
+    border-bottom: 2px solid cornflowerblue;
+}

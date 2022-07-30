@@ -1,4 +1,4 @@
-import './garage.css'
+import './add.css'
 
 const add = `<div class="add-wrapper">
                 <input class="add-name" type="text" id="add-name">

@@ -1,4 +1,4 @@
-import './garage.css'
+import './update.css'
 
 const update = `<div class="edit-wrapper">
                     <input disabled class="edit-name" type="text" id="editName">

@@ -1,0 +1,12 @@
+.winner {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    font-size: 50px;
+    font-weight: bold;
+    color: ghostwhite;
+}
+
+.display {
+    display: none;
+}
