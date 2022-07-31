@@ -1,0 +1,35 @@
+.edit-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.edit-name {
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+}
+
+.edit-name:focus {
+    outline: none;
+}
+
+.edit-color {
+    margin: 0 5px;
+}
+
+.edit-button {
+    font-size: 15px;
+    font-weight: bold;
+    background: lavender;
+    height: 27px;
+    width: 85px;
+    border-radius: 5px;
+    border-bottom: 4px solid cornflowerblue;
+}
+
+.edit-button:active {
+    border-bottom: 2px solid cornflowerblue;
+}

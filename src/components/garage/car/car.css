@@ -1,0 +1,28 @@
+@import "flag/flag.css";
+@import "amount/amount.css";
+@import "button/start/start.css";
+@import "button/stop/stop.css";
+@import "button/select/select.css";
+@import "button/remove/remove.css";
+
+.car-wrapper {
+    margin: 20px 0;
+}
+
+.car-wrapper__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.car-name {
+    font-size: 20px;
+    color: darkkhaki;
+    margin-left: 20px;
+}
+
+.car-wrapper__body {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed white;
+}

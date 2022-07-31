@@ -1,0 +1,21 @@
+.header-wrapper {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    width: 130px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 8px;
+    background: palegoldenrod;
+    border-bottom: 5px solid yellowgreen;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#garage:active,
+#winners:active {
+    border-bottom: 3px solid yellowgreen;
+}
