@@ -7,7 +7,7 @@ const winners = () => {
         let targetElement = e.target as HTMLElement;
 
         if (targetElement.getAttribute('id') === 'winners') {
-            innerHTML();
+            innerHTML('none');
         }
 
         if (targetElement.getAttribute('id') === 'wins') {
@@ -18,7 +18,7 @@ const winners = () => {
             } else {
                 localStorage.setItem('winOrder', 'DESC')
             }
-            innerHTML()
+            innerHTML('wins', localStorage.getItem('winOrder') + '')
         }
 
         if (targetElement.getAttribute('id') === 'time') {
@@ -29,7 +29,7 @@ const winners = () => {
             } else {
                 localStorage.setItem('timeOrder', 'DESC')
             }
-            innerHTML()
+            innerHTML('time', localStorage.getItem('timeOrder') + '')
         }
 
         prev(targetElement)

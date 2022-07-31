@@ -10,7 +10,7 @@ export default function next(element: HTMLElement) {
                 if ((Math.ceil(data.length / 10) > parseInt(page + ''))) {
                     console.log('a')
                     localStorage.setItem('winnersPage', parseInt(page + '') + 1 + '')
-                    innerHTML()
+                    innerHTML('none')
                 }
             })
     }

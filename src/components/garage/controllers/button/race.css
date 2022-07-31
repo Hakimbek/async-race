@@ -18,3 +18,8 @@
 .race-button:active {
     border-bottom: 2px solid cornflowerblue;
 }
+
+.race-button[disabled='true'] {
+    background: lightgray;
+    border-bottom: 4px solid gray;
+}

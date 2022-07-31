@@ -1,18 +1,16 @@
 import Header from "../../../../components/header/header";
-import Winners from "../../../../dto/Winners";
 import load from "../../../../controller/loader";
 import Param from "../../../../dto/param";
 import pagination from "../../../../components/winners/pagination/pagination";
-import winners from "../../../../components/winners/winners";
+import iteratePromise from "./iteartePromise";
 
-export default function innerHTML() {
-    let page = localStorage.getItem('winnersPage');
-    load(`http://127.0.0.1:3000/winners?_page=${page}&_limit=10&`, new Param('GET')).then((data) => {
-        load(`http://127.0.0.1:3000/winners`, new Param('GET'))
-            .then(res2 => {
-                (document.getElementById('root') as HTMLElement).innerHTML = `${Header}
+export default function innerHTML(sort: string, order?: string) {
+    load(`http://127.0.0.1:3000/winners`, new Param('GET'))
+        .then(res => {
+            let page = localStorage.getItem('winnersPage');
+            (document.getElementById('root') as HTMLElement).innerHTML = `${Header}
                 <div class="winners-body" id="winners-body">
-                    <h3 class="winners-amount">Winners ( ${res2.length} )</h3>
+                    <h3 class="winners-amount">Winners ( ${res.length} )</h3>
                     <p class="current-page">Page # ${page}</p>
                     <table>
                         <thead class="winners-table__head">
@@ -29,11 +27,19 @@ export default function innerHTML() {
                         </tbody>
                     </table>
                  </div>`
+            let url = `http://127.0.0.1:3000/winners?_page=${page}&_limit=10&`;
 
-                data.forEach((value: Winners) => {
-                    load(`http://127.0.0.1:3000/garage/${value.id}`, new Param('GET')).then(res => winners(value, res));
-                })
+            if (sort === 'time') {
+                url += `_sort=time&_order=${order}`
+            }
+
+            if (sort === 'wins') {
+                url += `_sort=wins&_order=${order}`
+            }
+
+            load(url, new Param('GET')).then((data) => {
+                iteratePromise(data)
                 pagination();
             })
-    })
+        });
 }

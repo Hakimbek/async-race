@@ -5,7 +5,7 @@ export default function prev(element: HTMLElement) {
         let page = localStorage.getItem('winnersPage')
         if (page !== '1') {
             localStorage.setItem('winnersPage', parseInt(page + '') - 1 + '')
-            innerHTML()
+            innerHTML('none')
         }
     }
 }
