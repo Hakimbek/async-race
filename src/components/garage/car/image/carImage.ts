@@ -1,12 +1,12 @@
-import Car from "../../../../dto/Car";
-import carColor from "../../../../assets/image/car";
+import Car from '../../../../dto/Car';
+import carColor from '../../../../random/svg/car';
 
 export default function carImage(value: Car) {
-    const carImage = document.createElement('div');
-    carImage.setAttribute('class', 'car-image')
-    carImage.setAttribute('index', value.id)
-    carImage.setAttribute('name', value.name)
-    carImage.innerHTML = carColor(value.color)
+  const carImageHTML = document.createElement('div');
+  carImageHTML.setAttribute('class', 'car-image');
+  carImageHTML.setAttribute('index', value.id);
+  carImageHTML.setAttribute('name', value.name);
+  carImageHTML.innerHTML = carColor(value.color);
 
-    return carImage;
+  return carImageHTML;
 }

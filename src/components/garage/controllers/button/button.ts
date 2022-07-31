@@ -1,4 +1,4 @@
-import './button.css'
+import './button.css';
 
 const button = `<div class="button-wrapper">
                     <button class="race-button" id="race">RACE</button>

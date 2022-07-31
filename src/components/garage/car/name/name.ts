@@ -1,9 +1,9 @@
-import Car from "../../../../dto/Car";
+import Car from '../../../../dto/Car';
 
 export default function name(value: Car) {
-    const name = document.createElement('div');
-    name.setAttribute('class', 'car-name')
-    name.innerText = value.name;
+  const nameHTML = document.createElement('div');
+  nameHTML.setAttribute('class', 'car-name');
+  nameHTML.innerText = value.name;
 
-    return name;
+  return nameHTML;
 }

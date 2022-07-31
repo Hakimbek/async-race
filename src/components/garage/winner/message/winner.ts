@@ -1,5 +1,5 @@
-import './winner.css'
+import './winner.css';
 
-const winner = `<div class="winner display" id="winner"></div>`;
+const winner = '<div class="winner display" id="winner"></div>';
 
 export default winner;

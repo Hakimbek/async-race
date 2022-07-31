@@ -1,7 +1,7 @@
 export default class Headers {
-    'Content-Type': string;
+  'Content-Type': string;
 
-    constructor(contentType: string) {
-        this["Content-Type"] = contentType;
-    }
+  constructor(contentType: string) {
+    this['Content-Type'] = contentType;
+  }
 }

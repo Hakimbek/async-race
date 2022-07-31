@@ -4,6 +4,8 @@ module.exports = {
         "es2021": true
     },
     "extends": [
+        "plugin:import/recommended",
+        "airbnb-typescript/base",
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended"
     ],
@@ -18,3 +20,4 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": ["error"]
     }
 }
+

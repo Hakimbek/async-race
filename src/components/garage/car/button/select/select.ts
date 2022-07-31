@@ -1,13 +1,13 @@
-import Car from "../../../../../dto/Car";
+import Car from '../../../../../dto/Car';
 
 export default function select(value: Car) {
-    const select = document.createElement('button')
-    select.setAttribute('class', 'select-button')
-    select.setAttribute('id', 'selectCar')
-    select.setAttribute('index', value.id)
-    select.setAttribute('name', value.name)
-    select.setAttribute('color', value.color)
-    select.innerText = 'SELECT'
+  const selectHTML = document.createElement('button');
+  selectHTML.setAttribute('class', 'select-button');
+  selectHTML.setAttribute('id', 'selectCar');
+  selectHTML.setAttribute('index', value.id);
+  selectHTML.setAttribute('name', value.name);
+  selectHTML.setAttribute('color', value.color);
+  selectHTML.innerText = 'SELECT';
 
-    return select;
+  return selectHTML;
 }

@@ -1,4 +1,4 @@
-import './style.css'
-import App from "./components/app";
+import './style.css';
+import App from './components/app';
 
 App();

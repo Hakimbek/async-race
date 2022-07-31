@@ -1,10 +1,8 @@
-import Car from "../../../../../dto/Car";
+export default function b() {
+  const bHTML = document.createElement('button');
+  bHTML.setAttribute('class', 'b-button gray');
+  bHTML.setAttribute('id', 'b');
+  bHTML.innerText = 'B';
 
-export default function b(value: Car) {
-    const b = document.createElement('button')
-    b.setAttribute('class', 'b-button gray')
-    b.setAttribute('id', 'b')
-    b.innerText = 'B';
-
-    return b;
+  return bHTML;
 }

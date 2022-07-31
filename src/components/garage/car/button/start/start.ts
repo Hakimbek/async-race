@@ -1,11 +1,11 @@
-import Car from "../../../../../dto/Car";
+import Car from '../../../../../dto/Car';
 
 export default function a(value: Car) {
-    const a = document.createElement('button')
-    a.setAttribute('class', 'a-button')
-    a.setAttribute('id', 'a')
-    a.setAttribute('index', value.id)
-    a.innerText = 'A';
+  const aHTML = document.createElement('button');
+  aHTML.setAttribute('class', 'a-button');
+  aHTML.setAttribute('id', 'a');
+  aHTML.setAttribute('index', value.id);
+  aHTML.innerText = 'A';
 
-    return a;
+  return aHTML;
 }
